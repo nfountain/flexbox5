@@ -96,56 +96,84 @@ textarea {
    ========================================================================== */
 
 html {
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   height: 100%;
   width: 100%;
 }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
+  background-color: rgb(17, 81, 75);
   padding: 0 2em;
-  font-size: 1.25em;
-  height: 100%;
-  color: #fff;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
 }
 
 header,
 footer {
-  background-color: #222;
   height: 80px;
   width: 100%;
 }
 
 main {
-  background-color: #ccc;
-  height: 250px;
   width: 100%;
+  font-size: 1.6rem;
 }
 
 header,
 footer,
 main {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center*/
 }
 
+h1 {
+    font-family: 'Lora', sans-serif;
+  }
+  
 #div-1,
 #div-2,
 #div-3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  line-height: 1.5em;
-  font-size: 1.25em;
-  /*height: auto;*/
+  flex: 1 1 0;
+  color: rgb(255, 255, 255);
+  line-height: 1.4rem;
+  font-size: 1.25rem;
+  margin: 0.5em 0;
 }
 
-.wrapper span {
+p span {
   font-family: 'Lora', sans-serif;
-  font-size: 1.3em;
+  font-size: 1.5rem;
+}
+
+main {
+    border-bottom: solid rgb(255, 255, 255) 1px;
+}
+
+#div-1 {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#div-2 {
+    padding-left: 1em;
+    padding-right: 1em;
+    border-left: solid rgb(255, 255, 255) 1px;
+    border-right: solid rgb(255, 255, 255) 1px;
+}
+
+#div-3 {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+footer {
+    border-top: solid rgb(255, 255, 255) 1px;
 }
 
 .flex-container {
@@ -153,7 +181,6 @@ main {
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
-    height: 100%;
   /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center, and set flex-flow to row wrap*/
 }
 
@@ -165,9 +192,7 @@ main {
   color: #fff;
   line-height: 1.5em;
   font-size: 1.6em;
-  background-color: #f16059;
   width: 30%;
-  height: 200px;
 }
 
 /* ==========================================================================
